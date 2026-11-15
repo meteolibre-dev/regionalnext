@@ -2,7 +2,7 @@
 
 **250 m** resolution weather super-resolution dataset and **FiLM-conditioned Residual U-Net** over France, the Alps, the Pyrenees, and bordering Europe (`lat [41.0, 51.8]`, `lon [-5.5, 13.5]`, `EPSG:3035`).
 
-Designed to downscale **`0.1°` (~9–10 km)** gridded forecasts (**ERA5-Land** during training; **Google WeatherNext 3** at inference) onto **250 m** terrain and land cover using **sparse weather station observations** as masked-loss targets.
+Designed to downscale **`0.1°` (~9–10 km)** gridded forecasts (**ERA5-Land** during training; **Google WeatherNext 2/3** or **IFS** at inference) onto **250 m** terrain and land cover using **sparse weather station observations** as masked-loss targets.
 
 - **Hugging Face Dataset:** [`meteolibre-dev/regionalnext`](https://huggingface.co/datasets/meteolibre-dev/regionalnext)
 - **GitHub Repository:** [`meteolibre-dev/regionalnext`](https://github.com/meteolibre-dev/regionalnext)
