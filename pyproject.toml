@@ -1,0 +1,30 @@
+[project]
+name = "regionalnext"
+version = "0.1.0"
+description = "250m ML-ready super-resolution dataset and downscaler on top of WeatherNext 3 & ERA5-Land"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=15",
+    "xarray>=2025.1",
+    "zarr>=3.1",
+    "numcodecs>=0.13",
+    "netcdf4>=1.7",
+    "scipy>=1.13",
+    "pyproj>=3.6",
+    "rasterio>=1.4",
+    "requests>=2.31",
+    "cdsapi>=0.7",
+    "huggingface-hub>=0.26",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+train = [
+    "torch>=2.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
